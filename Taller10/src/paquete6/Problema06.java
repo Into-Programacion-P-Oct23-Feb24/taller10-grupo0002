@@ -12,12 +12,16 @@ package paquete6;
 public class Problema06 {
 
     public static void main(String[] args) {
+        // Declarar variables y arreglos
         String[][] estudiantes = {{"Sarah Ward", "Philip Payne"},
         {"Carrie Burton", "Lauren Rice"},
         {"Emma Escobar", "Lori Flores"},
         {"Steven West", "Toni Martin"}
         };
         int comparar = 0;
+        // Este ciclo lo usamos para comparar el tamaño de el arreglo 
+        // estudiantes en x posición y comprobamos si cumple la condición
+        // para ser impreso 
         for (int i = 0; i < estudiantes.length; i++) {
             for (int j = 0; j < estudiantes[i].length; j++) {
                 comparar = estudiantes[i][j].length();

@@ -15,11 +15,21 @@ import java.util.Scanner;
 public class Problema04 {
 
     public static void main(String[] args) {
+
+        // Se declara el Scanner para ingreso de datos
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
+        // Se declaran las variables y los arreglos
         int fueraR = 0;
         double ingreso;
         double[][] datos = new double[2][2];
+        /**
+         * Este ciclo lo usamos Para el ingreso de datos del usuario y la
+         * comprobación de dicho dato entre en el rango de 1000 < x < 1999, si
+         * no cumple con dicha condición datos en x posición toma el valor de 10
+         * y fuera de rango aumenta en 1
+         *
+         */
         for (int i = 0; i < datos.length; i++) {
             for (int j = 0; j < datos[i].length; j++) {
                 System.out.println("Ingrese un datos entre 1000-1999");
@@ -32,12 +42,13 @@ public class Problema04 {
                 }
             }
         }
+        // Este ciclo lo usamos para la presentación de datos del arreglo 
         for (int i = 0; i < datos.length; i++) {
             for (int j = 0; j < datos[i].length; j++) {
-                System.out.printf("%.2f\n",datos[i][j]);
+                System.out.printf("%.2f\n", datos[i][j]);
             }
         }
-        System.out.println("Numero de veces fuera de rango: " + fueraR);
+        System.out.printf("Numero de veces fuera de rango: %s", fueraR);
 
     }
 }
