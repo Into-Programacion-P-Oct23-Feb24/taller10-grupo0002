@@ -26,8 +26,8 @@ public class Problema04 {
         /**
          * Este ciclo lo usamos Para el ingreso de datos del usuario y la
          * comprobación de dicho dato entre en el rango de 1000 < x < 1999, si
-         * no cumple con dicha condición datos en x posición toma el valor de 10
-         * y fuera de rango aumenta en 1
+         * no cumple con dicha condición datos en x posición el arreglo toma el
+         * valor de 10 y fuera de rango aumenta en 1
          *
          */
         for (int i = 0; i < datos.length; i++) {
